@@ -2,7 +2,7 @@
     // All the PHP Stuff to happen here. 
     require_once ('core/config.php');
     // Create connection
-    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    $conn = new mysqli('localhost', 'root', '', 'ems');
     // Check connection
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
@@ -29,7 +29,7 @@
     <!-- MAIN PAGE SECTION -->
 
     <main class="main">
-    <section class="py-xl bg-cover bg-size--cover" style="background-image: url('assets/images/backgrounds/img-1.jpg')">
+    <section class="py-xl bg-cover bg-size--cover" style="background-image: url('assets/images/backgrounds/march-madness-logo.jpg')">
         <span class="mask bg-tertiary alpha-6"></span>
         <div class="container d-flex align-items-center no-padding">
           <div class="col">
@@ -42,7 +42,7 @@
                     </button>
                     <span class="clearfix"></span>
                     <h4 class="heading h3 text-white pt-3 pb-5">
-                        Welcome to <?php echo APP_TITLE; ?>, <br>
+                        Welcome to March Madness <br>
                         Login to continue
 
                     </h4>

@@ -7,5 +7,5 @@
     define('DB_HOST', 'localhost');
     define('DB_NAME', 'ems');        
     define('DB_USER', 'root');
-    define('DB_PASS', 'password');
+    define('DB_PASS', '');
 ?>

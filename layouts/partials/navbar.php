@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark bg-dark py-4">
       <div class="container">
-        <a class="navbar-brand" href="../"><?php echo APP_TITLE; ?></a>
+        <a class="navbar-brand" href="../">March Madness</a>
         <button class="navbar-toggler" type="button" data-action="offcanvas-open" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,10 +15,16 @@
               <a class="nav-link" href="events.php">Events</a>
             </li>
 
-            
+             <li class="nav-item">
+                <a class="nav-link btn btn-sm btn-primary text-white" href="login.php">Login</a>
+              </li>
 
+            <li class="nav-item">
+              <a href="register.php" class="nav-link btn btn-sm btn-secondary text-dark">Register</a>
+            </li>
+           
             <?php 
-
+            /* 
             if($_SESSION['logged_in']) {
               ?>
               <li class="nav-item ">
@@ -32,8 +38,9 @@
               </li>
               <?php
             }
+            */
             ?>
-
+          
             
           </ul>
         </div>

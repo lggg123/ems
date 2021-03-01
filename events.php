@@ -15,13 +15,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Probably the most complete UI kit out there. Multiple functionalities and controls added,  extended color palette and beautiful typography, designed as its own extended version of Bootstrap at  the highest level of quality.                             ">
     <meta name="author" content="Webpixels">
-    <title><?php echo APP_TITLE; ?></title>
+    <title>March Madness</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
     <!-- Theme CSS -->
     <link type="text/css" href="assets/css/theme.css" rel="stylesheet">
     <!-- Demo CSS - No need to use these in your project -->
     <link type="text/css" href="assets/css/demo.css" rel="stylesheet">
+    <head>
+    <meta charset='utf-8' />
+    <link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js" integrity="sha256-rPPF6R+AH/Gilj2aC00ZAuB2EKmnEjXlEWx5MkAp7bw=" crossorigin="anonymous"></script>
+    <script>
+    
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+  </head>
   </head>
   <body>
     <?php include('layouts/partials/navbar.php'); ?>
@@ -29,85 +47,21 @@
     <!-- MAIN PAGE SECTION -->
 
     <main class="main">
-      <section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('assets/images/backgrounds/img-3.jpg')">
-        <span class="mask bg-tertiary alpha-7"></span>
-        <div class="spotlight-holder py-lg pt-lg-xl">
-          <div class="container d-flex align-items-center no-padding">
-            <div class="col">
-              <div class="row cols-xs-space align-items-center text-center text-md-left justify-content-center">
-                <div class="col-lg-7">
-                  <div class="text-center mt-5">
-                    <h1 class="heading h1 text-white">
-                      Events Page.
-                    </h1>
-                    <p class="lead lh-180 text-white mt-3">
-                      Modify this page and create an event management system.
-
-                      <?php 
-                        print_r($_SESSION);
-                      ?>
-                    </p>
-                    <div class="mt-5">
-                      <a href="#" class="btn btn-primary mr-3">Login</a>
-                      <a href="#" class="btn btn-secondary">Register</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+		<section class="py-xl bg-cover bg-size--cover" style="background-image: url('assets/images/backgrounds/march-madness-logo.jpg')">
+			<span class="mask bg-tertiary alpha-6"></span>
+			<div class="container d-flex align-items-center no-padding">
+			<div class="col">
+				<div class="row justify-content-center">
+				<div class="col-lg-4">
+					<div class="card bg-primary text-white">
+					<div class="card-body">
+              <div id="calendar"></div>
           </div>
         </div>
-      </section>
-      <section class="slice-lg">
-        <div class="container">
-          <div class="row align-items-center cols-xs-space cols-sm-space cols-md-space">
-            <div class="col-lg-6 order-lg-2 ml-lg-auto">
-              <div class="block block-image">
-                <img src="assets/images/prv/device-1.png" class="img-fluid img-center">
-              </div>
-            </div>
-            <div class="col-lg-5 order-lg-1">
-              <div class="row-wrapper">
-                <div class="row">
-                  <div class="col">
-                    <div class="d-flex align-items-start">
-                      <div class="icon icon-lg">
-                        <i class="fab fa-twitter"></i>
-                      </div>
-                      <div class="icon-text">
-                        <h3 class="heading h4">Latest Bootstrap framework</h3>
-                        
+      </div>
+    </section>
 
-                        <p>
-                            All the stuff that goes into your page.
-                        </p>
-
-                        <?php 
-                            $result = $conn->query('SELECT * FROM `dummy`');                        
-                            if ($result->num_rows > 0) {                                
-                                foreach ($result->fetch_assoc() as $res => $value) {
-                                    echo $value;
-                                }                
-                            } else {
-                                echo "0 results";
-                            }
-                        ?>
-                      </div>
-                    </div>
-                  </div>
-                </div>        
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>                
-    </main>
-    <!-- END MAIN PAGE SECTION -->
-
-
-    <?php 
-        include ('layouts/partials/footer.php');
-    ?>
+    
     
   
   

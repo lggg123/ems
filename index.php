@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Probably the most complete UI kit out there. Multiple functionalities and controls added,  extended color palette and beautiful typography, designed as its own extended version of Bootstrap at  the highest level of quality.                             ">
     <meta name="author" content="Webpixels">
-    <title><?php echo APP_TITLE; ?></title>
+    <title>March Madness</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
     <!-- Theme CSS -->
@@ -29,7 +29,7 @@
     <!-- MAIN PAGE SECTION -->
 
     <main class="main">
-      <section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('assets/images/backgrounds/img-3.jpg')">
+      <section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('assets/images/backgrounds/march-madness-logo.jpg')">
         <span class="mask bg-tertiary alpha-7"></span>
         <div class="spotlight-holder py-lg pt-lg-xl">
           <div class="container d-flex align-items-center no-padding">
@@ -38,14 +38,13 @@
                 <div class="col-lg-7">
                   <div class="text-center mt-5">
                     <h1 class="heading h1 text-white">
-                      Pre Summer Internship '21
+                      Basketball
                     </h1>
                     <p class="lead lh-180 text-white mt-3">
-                      Modify this page and create an event management system.
+                      Basketball Games
                     </p>
                     <div class="mt-5">
-                      <a href="#" class="btn btn-primary mr-3">Login</a>
-                      <a href="#" class="btn btn-secondary">Register</a>
+                      <a href="login.php" class="btn btn-primary mr-3">Login</a>
                     </div>
                   </div>
                 </div>
