@@ -1,8 +1,7 @@
 ## Summer Internship 2021 - PHP Assignment 
 # Event Management System
 
-This is a basic folder structure for the php assignment. The reason why we've made this is, to 
-let the interns / junior developers know what we expect to see when they turn in their projects. 
+This is a basic folder structure for the php assignment. I am a mentor/php developer finishing this project for icrewsystems a airlines web development firm.  
 
 ## Layouts
 
